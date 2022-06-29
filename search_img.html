@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search_img</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        
+
+            .div_google > img {
+                width: 300px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .div_google > div > span{
+                position:relative;
+                left: 750px;
+                bottom: 50px;
+                color: #4285f4;
+                font: 16px/16px roboto-regular, arial, sans-serif;
+}
+
+            .input_text{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: 40px;
+                width: 500px;
+                border: 1px solid #C0C0C0;
+                border-radius: 25px;
+                padding-left: 20px ;
+                font-size: 16px;
+            }
+            
+            .div_submit {
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+            }
+            
+            .submit {
+                margin: 10px;
+                border: #C0C0C0;
+                height: 40px;
+                width: 120px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 15px;
+                color: rgba(0, 0, 0, 0.945);   
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="div_google">
+            <img class="img" src="google.jpg">
+        </div>
+        <div class="div_google">
+        <div><span>Зображення</span></div>
+        </div>
+            <form action="https://images.google.com/images" method="get" role="search">
+            <div>
+                <input class="input_text" type="text" placeholder="Введіть запит" name="q">
+            </div>
+            <div class="div_submit">
+                <input class="submit" type="submit" value="Image Search">
+            </div>
+            </form>
+        </div>
+    </body>
+</html>
