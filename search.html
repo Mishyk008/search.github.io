@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            .div_top {
+                display: flex;
+                flex-direction: row-reverse;
+                
+            }
+
+            .top {
+                margin: 10px;
+                color: black;
+                text-decoration: none;
+                font-family: Arial;
+                font-size: 14px;
+                
+            }
+
+            .div_google > img {
+                width: 300px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .input_text{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: 40px;
+                width: 500px;
+                border: 1px solid #C0C0C0;
+                border-radius: 25px;
+                padding-left: 20px ;
+                font-size: 16px;
+            }
+            
+            .div_submit {
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+            }
+            
+            .submit {
+                margin: 10px;
+                border: #C0C0C0;
+                height: 40px;
+                width: 120px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 15px;
+                color: rgba(0, 0, 0, 0.945);   
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="div_top">
+            <a class="top" href="adv_search.html" target="_top">Розширений пошук</a>
+            <a class="top" href="search_img.html" target="_top">Зображення</a>
+        </div>
+        <div class="div_google">
+            <img class="img" src="google.jpg">
+        </div>
+            <form action="https://google.com/search">
+            <div>
+                <input class="input_text" type="text" name="q" placeholder="пошук">
+            </div>
+            <div class="div_submit">
+                <input class="submit" type="submit" value="Google Search">
+                <input class="submit" type="submit" name="btnI" value="Мені пощастить">
+            </div>
+            </form>
+        </div>
+    </body>
+</html>
